@@ -1,0 +1,43 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "forgottenrecipes:light"
+      ]
+    },
+    "criteria": {
+      "has_torch": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "minecraft:torch"
+            }
+          ]
+        }
+      },
+      "has_tinted_glass": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "minecraft:tinted_glass"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "forgottenrecipes:light"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_torch",
+        "has_tinted_glass",
+        "has_the_recipe"
+      ]
+    ]
+  }

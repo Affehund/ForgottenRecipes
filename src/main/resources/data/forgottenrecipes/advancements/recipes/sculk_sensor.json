@@ -1,0 +1,54 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "forgottenrecipes:sculk_sensor" 
+      ]
+    },
+    "criteria": {
+      "has_crying_obsidian": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "minecraft:crying_obsidian"
+            }
+          ]
+        }
+      },
+      "has_twisting_vines": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "minecraft:twisting_vines"
+            }
+          ]
+        }
+      },
+      "has_warped_wart_block": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "minecraft:warped_wart_block"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "forgottenrecipes:sculk_sensor"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_crying_obsidian",
+        "has_twisting_vines",
+        "has_warped_wart_block",
+        "has_the_recipe"
+      ]
+    ]
+  }
