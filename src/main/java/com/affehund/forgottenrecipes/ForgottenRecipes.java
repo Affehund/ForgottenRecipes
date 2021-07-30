@@ -1,35 +1,35 @@
 package com.affehund.forgottenrecipes;
 
-import net.fabricmc.api.ModInitializer;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.LightBlock;
-import net.minecraft.block.Material;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Items;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
-import net.minecraft.util.registry.Registry;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class ForgottenRecipes implements ModInitializer {
+@Mod(ForgottenRecipes.MOD_ID)
+public class ForgottenRecipes
+{
+    private static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "forgottenrecipes";
+    final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-    /*  TODO
-        doesn't work
-        should I even replace the light block stuff to work for survival?
-    */
-    public static final Item LIGHT_ITEM = new BlockItem(ForgottenRecipes.LIGHT_BLOCK, (new Item.Settings()).rarity(Rarity.EPIC));
-    public static final Block LIGHT_BLOCK = new LightBlock(Block.Settings.of(Material.AIR).strength(0F, 3600000.8F).nonOpaque().luminance(LightBlock.STATE_TO_LUMINANCE));
+    public ForgottenRecipes() {
+        // ITEMS.register(modEventBus);
+        // BLOCKS.register(modEventBus);
 
-    @Override
-    public void onInitialize() {
-        /*
-        Registry.register(Registry.ITEM, Registry.ITEM.getRawId(Items.LIGHT), "light",
-                LIGHT_ITEM);
-        Registry.register(Registry.BLOCK, Registry.BLOCK.getRawId(Blocks.LIGHT), "light", LIGHT_BLOCK);
-        */
+        MinecraftForge.EVENT_BUS.register(this);
     }
+
+    /*
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
+            "minecraft");
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
+            "minecraft");
+
+    public static final RegistryObject<Block> LIGHT_BLOCK = BLOCKS.register("light", () -> new LightBlock(BlockBehaviour.Properties.of(Material.AIR).strength(0F, 3600000.8F).noOcclusion().lightLevel(LightBlock.LIGHT_EMISSION)));
+
+    public static final RegistryObject<Item> LIGHT = ITEMS.register("light", () -> new BlockItem(LIGHT_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS).rarity(Rarity.UNCOMMON)));
+     */
 }
+
