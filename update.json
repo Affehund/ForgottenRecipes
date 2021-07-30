@@ -1,0 +1,10 @@
+{
+	"homepage" : "https://www.curseforge.com/minecraft/mc-mods/forgottenrecipes",
+  	"1.17.1" : {
+    	"forgottenrecipes-1.17.1-1.0.0" : "Initial release"
+	},
+  	"promos" : {
+		"1.16.5-latest" : "forgottenrecipes-1.17.1-1.0.0",
+    	"1.16.5-recommended" : "forgottenrecipes-1.17.1-1.0.0"
+	}
+}
