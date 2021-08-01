@@ -1,10 +1,11 @@
 {
 	"homepage" : "https://www.curseforge.com/minecraft/mc-mods/forgottenrecipes",
   	"1.17.1" : {
-    	"forgottenrecipes-forge-1.17.1-1.0.0" : "Initial release"
+    	"1.17.1-1.0.0" : "Initial release",
+		"1.17.1-1.0.1" : "Fixed IllegalArgumentException with version string causing a crash"
 	},
   	"promos" : {
-		"1.17.1-latest" : "forgottenrecipes-forge-1.17.1-1.0.0",
-    	"1.17.1-recommended" : "forgottenrecipes-forge-1.17.1-1.0.0"
+		"1.17.1-latest" : "1.17.1-1.0.1",
+    	"1.17.1-recommended" : "1.17.1-1.0.1"
 	}
 }
