@@ -8,7 +8,6 @@
 ## Recipes
 - Bundle
 - Leather (requires Campfire)
-- Light
 - Powder Snow Bucket
 - Sculk Sensor
  
