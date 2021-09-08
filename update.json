@@ -3,10 +3,11 @@
   	"1.17.1" : {
     	"1.17.1-1.0.0" : "Initial release",
 		"1.17.1-1.0.1" : "Fixed IllegalArgumentException with version string causing a crash",
-		"1.17.1-1.0.2" : "Fixed problems with update.json"
+		"1.17.1-1.0.2" : "Fixed problems with update.json",
+		"1.17.1-1.0.3" : "Removed light recipe as the light block is not usable in survival mode"
 	},
   	"promos" : {
-		"1.17.1-latest" : "1.17.1-1.0.2",
-    	"1.17.1-recommended" : "1.17.1-1.0.2"
+		"1.17.1-latest" : "1.17.1-1.0.3",
+    	"1.17.1-recommended" : "1.17.1-1.0.3"
 	}
 }
