@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "forgottenrecipes",
+  "version": "${version}",
+  "name": "ForgottenRecipes",
+  "description": "Adding recipes that should be in the Caves & Cliffs update",
+  "authors": [
+    "Affehund"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/forgottenrecipes",
+    "repo": "https://github.com/Affehund/ForgottenRecipes/",
+    "issues": "https://github.com/affehund/ForgottenRecipes/issues"
+  },
+  "license": "GNU GPLv3",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {},
+  "depends": {
+    "fabricloader": ">=0.12.8",
+    "minecraft": "1.18.x"
+  }
+}
