@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": {
+      "item": "minecraft:echo_shard"
+    },
+    "v": {
+      "item": "minecraft:vine"
+    }
+  },
+  "pattern": [
+    "ev",
+    "vv"
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:sculk_vein"
+  }
+}

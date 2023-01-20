@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "minecraft:ghast_tear"
+    },
+    "o": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "ooo",
+    "ogo",
+    "ooo"
+  ],
+  "result": {
+    "count": 8,
+    "item": "minecraft:crying_obsidian"
+  }
+}

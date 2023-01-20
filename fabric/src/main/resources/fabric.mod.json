@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "template",
+  "version": "${version}",
+  "name": "Forgotten Recipes",
+  "description": "Adding missing recipes from the Caves & Cliffs Update and Wild Update\n",
+  "authors": [
+    "Affehund"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/forgottenrecipes/",
+    "issues": "https://github.com/Affehund/forgottenrecipes/issues",
+    "sources": "https://github.com/Affehund/forgottenrecipes"
+  },
+  "license": "GPL-3.0",
+  "icon": "logo.png",
+  "accessWidener": "forgottenrecipes.accesswidener",
+  "environment": "server",
+  "entrypoints": {
+  },
+  "mixins": [
+  ],
+  "depends": {
+    "fabricloader": ">=0.14",
+    "fabric": "*",
+    "minecraft": "1.19.3",
+    "java": ">=17"
+  }
+}
+  

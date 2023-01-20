@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "c": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "t": {
+      "item": "minecraft:twisting_vines"
+    },
+    "w": {
+      "item": "minecraft:warped_wart_block"
+    }
+  },
+  "pattern": [
+    "twt",
+    "cwc"
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:sculk_sensor"
+  }
+}
