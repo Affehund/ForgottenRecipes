@@ -1,2 +1,4 @@
-package com.affehund.forgottenrecipes;public class ForgottenRecipes {
+package com.affehund.forgottenrecipes;
+
+public class ForgottenRecipes {
 }

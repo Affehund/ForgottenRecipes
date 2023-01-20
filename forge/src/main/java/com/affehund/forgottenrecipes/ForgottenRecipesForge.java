@@ -8,8 +8,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.network.NetworkConstants;
 
 @Mod("forgottenrecipes")
-public class ForgottenRecipes {
-    public ForgottenRecipes() {
+public class ForgottenRecipesForge {
+    public ForgottenRecipesForge() {
         ModLoadingContext.get().registerExtensionPoint(IExtensionPoint.DisplayTest.class, () -> new IExtensionPoint.DisplayTest(() -> NetworkConstants.IGNORESERVERONLY, (a, b) -> true));
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::gatherData);
     }

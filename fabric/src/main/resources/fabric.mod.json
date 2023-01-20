@@ -14,14 +14,10 @@
   },
   "license": "GPL-3.0",
   "icon": "logo.png",
-  "accessWidener": "forgottenrecipes.accesswidener",
   "environment": "server",
-  "entrypoints": {
-  },
-  "mixins": [
-  ],
+  "entrypoints": {},
   "depends": {
-    "fabricloader": ">=0.14",
+    "fabricloader": ">=0.14.11",
     "fabric": "*",
     "minecraft": "1.19.3",
     "java": ">=17"

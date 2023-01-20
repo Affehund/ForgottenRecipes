@@ -4,17 +4,9 @@ plugins {
     id 'idea'
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
-
 archivesBaseName = "${mod_id}-fabric-${minecraft_version}"
 
 repositories {
-    maven {
-        name = "Ladysnake Libs"
-        url = "https://ladysnake.jfrog.io/artifactory/mods"
-    }
-
     maven {
         name = "TerraformersMC"
         url = "https://maven.terraformersmc.com/releases/"
@@ -35,8 +27,6 @@ dependencies {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/${mod_id}.accesswidener")
-
     runs {
         client {
             client()
