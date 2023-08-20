@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "template",
+  "id": "forgottenrecipes",
   "version": "${version}",
   "name": "Forgotten Recipes",
-  "description": "Adding missing recipes from the Caves & Cliffs Update and Wild Update\n",
+  "description": "Adding missing recipes from the Caves & Cliffs Update and Wild Update",
   "authors": [
     "Affehund"
   ],
@@ -14,12 +14,12 @@
   },
   "license": "GPL-3.0",
   "icon": "logo.png",
-  "environment": "server",
+  "environment": "*",
   "entrypoints": {},
   "depends": {
     "fabricloader": ">=0.14.11",
     "fabric": "*",
-    "minecraft": "1.19.3",
+    "minecraft": "1.19.4",
     "java": ">=17"
   }
 }
